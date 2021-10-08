@@ -1,0 +1,52 @@
+/* 
+Du solltest die einzelnen li-Elemente mit einem Wert von .8em stylen, sodass jede Ebene einen kleineren Text als die vorherige hat
+Setze die line-height Eigenschaft für jedes li-Element auf 1.5em
+Setze die Eigenschaft padding-inline-start für alle ul-Elemente auf 1.2em
+Setze die list-style Eigenschaft für jedes li-Element innerhalb eines ul-Elements einer bestimmten Tierkategorie auf einen passenden Emoji
+Setze die font-size und die border für die section mit Hilfe von rems */
+body {
+    text-align: left;
+    width:40vw;
+    padding:0 5%;
+}
+section {
+    border: 0.3em solid black;
+    width: 40vw;
+}
+li {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    list-style: none;
+}
+ul {    
+    padding-inline-start: 1.2em;    
+}
+
+
+
+/* dogs */
+section ul:first-child li:first-child ul:first-child li:first-child ul:nth-of-type(1) li::before{
+ content:"🐶";
+ padding-right: 0.2em;
+ 
+}
+/* cats */
+section ul:first-child li:first-child ul:first-child li:nth-child(2):nth-of-type(2) li::before{
+    content:"🐱";
+    padding-right: 0.2em;
+}
+/* birds */
+section ul:first-child li:nth-child(2) ul:first-child li:first-child ul:first-child li::before {
+    content:"🦜";
+    padding-right: 0.2em;
+}
+/* reptiles */
+
+section ul:first-child li:nth-child(3) ul:first-child li:first-child ul:first-child li::before {
+    content:"🐍"; 
+    padding-right: 0.2em;
+}
+section ul:first-child li:nth-child(3) ul:first-child li:nth-child(2) ul:first-child li::before {
+    content:"🦖";
+    padding-right: 0.2em;
+} 
